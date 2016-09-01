@@ -1,0 +1,16 @@
+{
+  "name": "ghost app",
+  "description": "A Demo Ghost Site to show off dokku require",
+  "keywords": [
+    "productivity",
+    "HTML5"
+  ],
+  "dokku":{
+    "plugins":[
+      "mariadb"
+    ],
+    "volumes":[
+      {"host":"/home/dokku/$APP/images","app":"/app/content/images"}
+    ]
+  }
+}
